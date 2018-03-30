@@ -1,0 +1,1348 @@
+{
+    "_id" : {
+        "GRUPPO" : "PIONR",
+        "ABI" : "03033",
+        "TIPO_POSIZIONE" : "CONFIGURAZIONE_REGOLA",
+        "DATA_CATALOGO" : "201711",
+        "TIPO_CONFIGURAZIONE" : "STANDARD",
+        "MODULO" : "INATTESI_ASSICURAZIONI_NEW",
+        "LIVELLO_REGOLA" : 1,
+        "ID_REGOLA" : "REGOLA_04",
+        "ID_GRUPPO_REGOLA" : "INATTESI"
+    },
+    "INPUT" : {
+        "DESCRIZIONE_BREVE" : "Regola su indici di correzione (incassi)",
+        "DESCRIZIONE_ESTESA" : "Versamenti di importo rilevante rispetto alle caratteristiche del cliente  persona non fisica (orizzonte 12 mesi)",
+        "TIPO_REGOLA" : [ 
+            "AML"
+        ],
+        "TIPO_SOGGETTO" : [ 
+            "Titolare"
+        ],
+        "DATA_ATTIVAZIONE_REGOLA" : ISODate("2000-01-01T00:00:00.000Z"),
+        "DATA_MODIFICA" : ISODate("2017-01-01T00:00:00.000Z"),
+        "DATA_DISATTIVAZIONE" : Date(32472144000000),
+        "TIPO_EVENTO" : "",
+        "FLAG_VISIBILITA" : true,
+        "FLAG_CONFIGURABILITA" : true,
+        "ATTRIBUTO_PRATICA" : "GIANOS",
+        "CATEGORIA_PRATICA" : "AML",
+        "PARAMETRI_REGOLA" : [ 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201711",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "dettaglio_incasso",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "INATTESI_ASSICURAZIONI",
+                    "ID_REGOLA" : "REGOLA_04_1",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "INATTESI"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Multiplo",
+                    "VALORE_MULTIPLO" : [ 
+                        "01"
+                    ],
+                    "ABI" : ""
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201711",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "tipo_registrazione",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "INATTESI_ASSICURAZIONI",
+                    "ID_REGOLA" : "REGOLA_04_2",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "INATTESI"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Multiplo",
+                    "VALORE_MULTIPLO" : [ 
+                        "10", 
+                        "11", 
+                        "12", 
+                        "13", 
+                        "18", 
+                        "19"
+                    ],
+                    "ABI" : ""
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201711",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "qualifica_soggetto",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "INATTESI_ASSICURAZIONI",
+                    "ID_REGOLA" : "REGOLA_04_3",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "INATTESI"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "VALORE_ALFANUMERICO" : "01",
+                    "ABI" : ""
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201711",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "natura_giuridica",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "INATTESI_ASSICURAZIONI",
+                    "ID_REGOLA" : "REGOLA_04_4",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "INATTESI"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Multiplo",
+                    "VALORE_MULTIPLO" : [ 
+                        "01", 
+                        "02", 
+                        "03", 
+                        "04", 
+                        "05", 
+                        "06", 
+                        "07", 
+                        "08"
+                    ],
+                    "ABI" : ""
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201711",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "tipo_rapporto",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "INATTESI_ASSICURAZIONI",
+                    "ID_REGOLA" : "REGOLA_04_5",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "INATTESI"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Multiplo",
+                    "VALORE_MULTIPLO" : [ 
+                        "2", 
+                        "3"
+                    ],
+                    "ABI" : ""
+                }
+            }
+        ],
+        "SOGLIE_CORRETTIVE_REGOLA" : [ 
+            {
+                "CAMPO" : "NATURA_GIURIDICA",
+                "DESCRIZIONE" : "natura giuridica",
+                "DOMINI_SOGLIA" : [ 
+                    {
+                        "VALORE" : "02",
+                        "DESCRIZIONE" : "persona giuridica S.p.A",
+                        "IMPORTO_BASE" : 2000000,
+                        "COEFFICIENTI" : [ 
+                            {
+                                "CAMPO" : "SAE",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Sae",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "SAE senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "SAE con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ATECO",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Ateco",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "ATECO senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.05
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : 2,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio massimo di rischio",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ANNI_COSTITUZIONE",
+                                "TIPO" : "FUNC",
+                                "DESCRIZIONE" : "Anni costituzione",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "< 3",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 3,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "> 55",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -1,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.1
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "RISULTATO_ULTIMO_ESERCIZIO",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Risultato economico ultimo esercizio",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "Utile",
+                                        "VALORE" : "1",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Perdita",
+                                        "VALORE" : "2",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Non significativo",
+                                        "VALORE" : "0",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "NUM_ESERCIZI_PERDITA",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Numero esercizi consegutivi in perdita compreso ultimo",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "1 esercizio",
+                                        "VALORE" : "01",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "2 esercizi",
+                                        "VALORE" : "02",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "3 o oltre",
+                                        "VALORE" : "03",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "REDDITO_FATTURATO",
+                                "TIPO" : "STRING",
+                                "DESCRIZIONE" : "Reddito fatturato",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "da  0 a  2.500",
+                                        "VALORE" : "01",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.6
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.501 a 20.000 euro",
+                                        "VALORE" : "02",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.6
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 20.001 a € 50.000",
+                                        "VALORE" : "03",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 50.001 a  € 100.000",
+                                        "VALORE" : "04",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.6
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 100.001 a €  250.000",
+                                        "VALORE" : "05",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.4
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 250.001 a €  500.000",
+                                        "VALORE" : "06",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.2
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+                                        "VALORE" : "07",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+                                        "VALORE" : "08",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.6
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+                                        "VALORE" : "09",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.6
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+                                        "VALORE" : "10",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.6
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "oltre 50.000.000",
+                                        "VALORE" : "11",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.6
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "VALORE" : "01",
+                        "DESCRIZIONE" : "persona giuridica (eccetto S.p.A. e altre società indicate) /ditta individuale",
+                        "IMPORTO_BASE" : 1000000,
+                        "COEFFICIENTI" : [ 
+                            {
+                                "CAMPO" : "SAE",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Sae",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "SAE senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "SAE con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ATECO",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Ateco",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "ATECO senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.05
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : 2,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio massimo di rischio",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ANNI_COSTITUZIONE",
+                                "TIPO" : "FUNC",
+                                "DESCRIZIONE" : "Anni costituzione",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "< 3",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 3,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "> 55",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -1,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.1
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "RISULTATO_ULTIMO_ESERCIZIO",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Risultato economico ultimo esercizio",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "Utile",
+                                        "VALORE" : "1",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Perdita",
+                                        "VALORE" : "2",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Non significativo",
+                                        "VALORE" : "0",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "NUM_ESERCIZI_PERDITA",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Numero esercizi consegutivi in perdita compreso ultimo",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "1 esercizio",
+                                        "VALORE" : "01",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "2 esercizi",
+                                        "VALORE" : "02",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "3 o oltre",
+                                        "VALORE" : "03",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "REDDITO_FATTURATO",
+                                "TIPO" : "STRING",
+                                "DESCRIZIONE" : "Reddito fatturato",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "da  0 a  2.500",
+                                        "VALORE" : "01",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.501 a 20.000 euro",
+                                        "VALORE" : "02",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 20.001 a € 50.000",
+                                        "VALORE" : "03",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 50.001 a  € 100.000",
+                                        "VALORE" : "04",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 100.001 a €  250.000",
+                                        "VALORE" : "05",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 250.001 a €  500.000",
+                                        "VALORE" : "06",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+                                        "VALORE" : "07",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+                                        "VALORE" : "08",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+                                        "VALORE" : "09",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+                                        "VALORE" : "10",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "oltre 50.000.000",
+                                        "VALORE" : "11",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "VALORE" : "04",
+                        "DESCRIZIONE" : "Trust/strutture analoghe",
+                        "IMPORTO_BASE" : 200000,
+                        "COEFFICIENTI" : [ 
+                            {
+                                "CAMPO" : "SAE",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Sae",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "SAE senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "SAE con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ATECO",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Ateco",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "ATECO senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : 2,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio massimo di rischio",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ANNI_COSTITUZIONE",
+                                "TIPO" : "FUNC",
+                                "DESCRIZIONE" : "Anni costituzione",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "< 3",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 3,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.2
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "> 55",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -1,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.1
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "RISULTATO_ULTIMO_ESERCIZIO",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Risultato economico ultimo esercizio",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "Utile",
+                                        "VALORE" : "1",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Perdita",
+                                        "VALORE" : "2",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Non significativo",
+                                        "VALORE" : "0",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "NUM_ESERCIZI_PERDITA",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Numero esercizi consegutivi in perdita compreso ultimo",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "1 esercizio",
+                                        "VALORE" : "01",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "2 esercizi",
+                                        "VALORE" : "02",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "3 o oltre",
+                                        "VALORE" : "03",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "REDDITO_FATTURATO",
+                                "TIPO" : "STRING",
+                                "DESCRIZIONE" : "Reddito fatturato",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "da  0 a  2.500",
+                                        "VALORE" : "01",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.501 a 20.000 euro",
+                                        "VALORE" : "02",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 20.001 a € 50.000",
+                                        "VALORE" : "03",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 50.001 a  € 100.000",
+                                        "VALORE" : "04",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 100.001 a €  250.000",
+                                        "VALORE" : "05",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 250.001 a €  500.000",
+                                        "VALORE" : "06",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+                                        "VALORE" : "07",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+                                        "VALORE" : "08",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+                                        "VALORE" : "09",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+                                        "VALORE" : "10",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "oltre 50.000.000",
+                                        "VALORE" : "11",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "VALORE" : "05",
+                        "DESCRIZIONE" : "Enti religiosi",
+                        "IMPORTO_BASE" : 1000000,
+                        "COEFFICIENTI" : [ 
+                            {
+                                "CAMPO" : "SAE",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Sae",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "SAE senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "SAE con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ATECO",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Ateco",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "ATECO senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : 2,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio massimo di rischio",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ANNI_COSTITUZIONE",
+                                "TIPO" : "FUNC",
+                                "DESCRIZIONE" : "Anni costituzione",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "< 3",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 3,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.2
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "> 55",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -1,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.1
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "RISULTATO_ULTIMO_ESERCIZIO",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Risultato economico ultimo esercizio",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "Utile",
+                                        "VALORE" : "1",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Perdita",
+                                        "VALORE" : "2",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Non significativo",
+                                        "VALORE" : "0",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "NUM_ESERCIZI_PERDITA",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Numero esercizi consegutivi in perdita compreso ultimo",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "1 esercizio",
+                                        "VALORE" : "01",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "2 esercizi",
+                                        "VALORE" : "02",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "3 o oltre",
+                                        "VALORE" : "03",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "REDDITO_FATTURATO",
+                                "TIPO" : "STRING",
+                                "DESCRIZIONE" : "Reddito fatturato",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "da  0 a  2.500",
+                                        "VALORE" : "01",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.501 a 20.000 euro",
+                                        "VALORE" : "02",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 20.001 a € 50.000",
+                                        "VALORE" : "03",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 50.001 a  € 100.000",
+                                        "VALORE" : "04",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 100.001 a €  250.000",
+                                        "VALORE" : "05",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 250.001 a €  500.000",
+                                        "VALORE" : "06",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+                                        "VALORE" : "07",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+                                        "VALORE" : "08",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+                                        "VALORE" : "09",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+                                        "VALORE" : "10",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "oltre 50.000.000",
+                                        "VALORE" : "11",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "VALORE" : "06",
+                        "DESCRIZIONE" : "Non profit/strutture analoghe",
+                        "IMPORTO_BASE" : 300000,
+                        "COEFFICIENTI" : [ 
+                            {
+                                "CAMPO" : "SAE",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Sae",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "SAE senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "SAE con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ATECO",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Ateco",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "ATECO senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : 2,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio massimo di rischio",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ANNI_COSTITUZIONE",
+                                "TIPO" : "FUNC",
+                                "DESCRIZIONE" : "Anni costituzione",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "< 3",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 3,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.2
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "> 55",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -1,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.1
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "RISULTATO_ULTIMO_ESERCIZIO",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Risultato economico ultimo esercizio",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "Utile",
+                                        "VALORE" : "1",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Perdita",
+                                        "VALORE" : "2",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Non significativo",
+                                        "VALORE" : "0",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "NUM_ESERCIZI_PERDITA",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Numero esercizi consegutivi in perdita compreso ultimo",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "1 esercizio",
+                                        "VALORE" : "01",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "2 esercizi",
+                                        "VALORE" : "02",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "3 o oltre",
+                                        "VALORE" : "03",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "REDDITO_FATTURATO",
+                                "TIPO" : "STRING",
+                                "DESCRIZIONE" : "Reddito fatturato",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "da  0 a  2.500",
+                                        "VALORE" : "01",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.501 a 20.000 euro",
+                                        "VALORE" : "02",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 20.001 a € 50.000",
+                                        "VALORE" : "03",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 50.001 a  € 100.000",
+                                        "VALORE" : "04",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 100.001 a €  250.000",
+                                        "VALORE" : "05",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.3
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 250.001 a €  500.000",
+                                        "VALORE" : "06",
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.1
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+                                        "VALORE" : "07",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+                                        "VALORE" : "08",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+                                        "VALORE" : "09",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+                                        "VALORE" : "10",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "oltre 50.000.000",
+                                        "VALORE" : "11",
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.5
+                                    }
+                                ]
+                            }
+                        ]
+                    }, 
+                    {
+                        "VALORE" : "07",
+                        "DESCRIZIONE" : "Fiduciare da implementare nell'acquisizione quando SAE=265 e 273",
+                        "IMPORTO_BASE" : 400000,
+                        "COEFFICIENTI" : [ 
+                            {
+                                "CAMPO" : "SAE",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Sae",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "SAE senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "SAE con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ATECO",
+                                "TIPO" : "FUNC",
+                                "DESCRIONE" : "Ateco",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "ATECO senza punteggio di rischio",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 0,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio di rischio",
+                                        "VALORE_MIN" : 1,
+                                        "VALORE_MAX" : 2,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "ATECO con punteggio massimo di rischio",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -99,
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "ANNI_COSTITUZIONE",
+                                "TIPO" : "FUNC",
+                                "DESCRIZIONE" : "Anni costituzione",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "< 3",
+                                        "VALORE_MIN" : 0,
+                                        "VALORE_MAX" : 3,
+                                        "SEGNO" : -1,
+                                        "COEFFICENTE" : 0.2
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "> 55",
+                                        "VALORE_MIN" : 3,
+                                        "VALORE_MAX" : -1,
+                                        "SEGNO" : 1,
+                                        "COEFFICENTE" : 0.1
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "RISULTATO_ULTIMO_ESERCIZIO",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Risultato economico ultimo esercizio",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "Utile",
+                                        "VALORE" : "1",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Perdita",
+                                        "VALORE" : "2",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "Non significativo",
+                                        "VALORE" : "0",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "NUM_ESERCIZI_PERDITA",
+                                "TIPO" : "STRING",
+                                "DESCRIONE" : "Numero esercizi consegutivi in perdita compreso ultimo",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "1 esercizio",
+                                        "VALORE" : "01",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "2 esercizi",
+                                        "VALORE" : "02",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "3 o oltre",
+                                        "VALORE" : "03",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }, 
+                            {
+                                "CAMPO" : "REDDITO_FATTURATO",
+                                "TIPO" : "STRING",
+                                "DESCRIZIONE" : "Reddito fatturato",
+                                "DOMINI_COEFFICENTE" : [ 
+                                    {
+                                        "DESCRIZIONE" : "da  0 a  2.500",
+                                        "VALORE" : "01",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.501 a 20.000 euro",
+                                        "VALORE" : "02",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 20.001 a € 50.000",
+                                        "VALORE" : "03",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 50.001 a  € 100.000",
+                                        "VALORE" : "04",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 100.001 a €  250.000",
+                                        "VALORE" : "05",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 250.001 a €  500.000",
+                                        "VALORE" : "06",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+                                        "VALORE" : "07",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+                                        "VALORE" : "08",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+                                        "VALORE" : "09",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+                                        "VALORE" : "10",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }, 
+                                    {
+                                        "DESCRIZIONE" : "oltre 50.000.000",
+                                        "VALORE" : "11",
+                                        "SEGNO" : 0,
+                                        "COEFFICENTE" : 0
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "CATEGORIA_TDP" : "Colonnare"
+}

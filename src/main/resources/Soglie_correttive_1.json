@@ -1,0 +1,1487 @@
+{
+    "_id" : {
+        "GRUPPO" : "00223",
+        "ABI" : "03008",
+        "TIPO_POSIZIONE" : "CONFIGURAZIONE_REGOLA",
+        "DATA_CATALOGO" : "201702",
+        "TIPO_CONFIGURAZIONE" : "NEW_RULE",
+        "MODULO" : "INATTESI_ASSICURAZIONI",
+        "LIVELLO_REGOLA" : 1,
+        "ID_REGOLA" : "REGOLA_1_12_MESI_PF_NEW",
+        "ID_GRUPPO_REGOLA" : "INATTESI"
+    },
+    "INPUT" : {
+        "DESCRIZIONE_BREVE" : "",
+        "DESCRIZIONE_ESTESA" : "",
+        "TIPO_REGOLA" : [ 
+            "AML"
+        ],
+        "TIPO_SOGGETTO" : [ 
+            "Contraente"
+        ],
+        "DATA_ATTIVAZIONE_REGOLA" : ISODate("2000-01-01T00:00:00.000Z"),
+        "DATA_MODIFICA" : Date(253402128000000),
+        "DATA_DISATTIVAZIONE" : Date(32472144000000),
+        "TIPO_EVENTO" : [],
+        "FLAG_VISIBILITA" : true,
+        "FLAG_CONFIGURABILITA" : true,
+        "ATTRIBUTO_PRATICA" : "GIANOS",
+        "CATEGORIA_PRATICA" : "AML",
+        "PARAMETRI_REGOLA" : [],
+		"SOGLIE_CORRETTIVE_REGOLA" : [
+			{
+				"CAMPO" : "SEGMENTO_CLIENTELA",
+				"DESCRIZIONE" : "Segmento clientela",
+				"DOMINI_SOGLIA" : [
+					{
+						"VALORE" : "01",
+						"DESCRIZIONE" : "Dipendente",
+						"IMPORTO_BASE" : 200000,
+						"COEFFICENTI" : [
+							{
+								"CAMPO" : "ORIGINE_FONDI",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Origine dei fondi",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "Reddito da lavoro dipendente",
+										"VALORE" : "01",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reddito da lavoratore autonomo",
+										"VALORE" : "02",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Vincita",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3										
+									},
+									{
+										"DESCRIZIONE" : "Lascito/eredità/donazione",
+										"VALORE" : "04",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.3										
+									},
+									{
+										"DESCRIZIONE" : "Cliente reddituario da precedente occupazione/pensione",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Operazioni/Rendite da immobili",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Utile societario/Reddito d’impresa",
+										"VALORE" : "07",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Disinvestimento",
+										"VALORE" : "08",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reinvestimento",
+										"VALORE" : "09",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Investimento di fondi da liquidazione sinistro danni",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Scudo fiscale/voluntary disclosure",
+										"VALORE" : "11",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.2										
+									},
+									{
+										"DESCRIZIONE" : "Altro",
+										"VALORE" : "12",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									}
+								]
+							},
+							{
+								"CAMPO" : "ETA",
+								"TIPO" : "FUNC",
+								"DESCRIZIONE" : "Eta'",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "< 25",
+										"VALORE_MIN" : 0,
+										"VALORE_MAX" : 25,
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "> 55",
+										"VALORE_MIN" : 55,
+										"VALORE_MAX" : -1,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2										
+									}
+								]
+							},
+							{
+								"CAMPO" : "REDDITO_FATTURATO",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Reddito fatturato",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "da  0 a  2.500",
+										"VALORE" : "01",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.501 a 20.000 euro",
+										"VALORE" : "02",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da € 20.001 a € 50.000",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									},
+									{
+										"DESCRIZIONE" : "da € 50.001 a  € 100.000",
+										"VALORE" : "04",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 100.001 a €  250.000",
+										"VALORE" : "05",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da € 250.001 a €  500.000",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+										"VALORE" : "07",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+										"VALORE" : "08",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+										"VALORE" : "09",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "oltre 50.000.000",
+										"VALORE" : "11",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									}
+								]
+							},
+							{
+								"CAMPO" : "FLAG_CLIENTE_PRIVATE",
+								"TIPO" : "BOOLEAN",
+								"DESCRIZIONE" : "Cliente Private",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "SI",
+										"VALORE" : true,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 1										
+									},
+									{
+										"DESCRIZIONE" : "NO",
+										"VALORE" : false,
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									}
+								]
+							}
+						]
+					},
+					{
+						"VALORE" : "02",
+						"DESCRIZIONE" : "Dirigente - Soggetto apicale",
+						"IMPORTO_BASE" : 600000,
+						"COEFFICENTI" : [
+							{
+								"CAMPO" : "ORIGINE_FONDI",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Origine dei fondi",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "Reddito da lavoro dipendente",
+										"VALORE" : "01",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reddito da lavoratore autonomo",
+										"VALORE" : "02",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Vincita",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3										
+									},
+									{
+										"DESCRIZIONE" : "Lascito/eredità/donazione",
+										"VALORE" : "04",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.3									
+									},
+									{
+										"DESCRIZIONE" : "Cliente reddituario da precedente occupazione/pensione",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Operazioni/Rendite da immobili",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Utile societario/Reddito d’impresa",
+										"VALORE" : "07",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Disinvestimento",
+										"VALORE" : "08",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reinvestimento",
+										"VALORE" : "09",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Investimento di fondi da liquidazione sinistro danni",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Scudo fiscale/voluntary disclosure",
+										"VALORE" : "11",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.2										
+									},
+									{
+										"DESCRIZIONE" : "Altro",
+										"VALORE" : "12",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									}
+								]
+							},
+							{
+								"CAMPO" : "ETA",
+								"TIPO" : "FUNC",
+								"DESCRIZIONE" : "Eta'",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "< 25",
+										"VALORE_MIN" : 0,
+										"VALORE_MAX" : 25,
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "> 55",
+										"VALORE_MIN" : 55,
+										"VALORE_MAX" : -1,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2										
+									}
+								]
+							},
+							{
+								"CAMPO" : "REDDITO_FATTURATO",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Reddito fatturato",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "da  0 a  2.500",
+										"VALORE" : "01",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.501 a 20.000 euro",
+										"VALORE" : "02",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5									
+									},
+									{
+										"DESCRIZIONE" : "da € 20.001 a € 50.000",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									},
+									{
+										"DESCRIZIONE" : "da € 50.001 a  € 100.000",
+										"VALORE" : "04",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 100.001 a €  250.000",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 250.001 a €  500.000",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.3										
+									},
+									{
+										"DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+										"VALORE" : "07",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+										"VALORE" : "08",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+										"VALORE" : "09",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "oltre 50.000.000",
+										"VALORE" : "11",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									}
+								]
+							},
+							{
+								"CAMPO" : "FLAG_CLIENTE_PRIVATE",
+								"TIPO" : "BOOLEAN",
+								"DESCRIZIONE" : "Cliente Private",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "SI",
+										"VALORE" : true,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "NO",
+										"VALORE" : false,
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									}
+								]
+							}
+						]
+					},
+					{
+						"VALORE" : "03",
+						"DESCRIZIONE" : "Imprenditore",
+						"IMPORTO_BASE" : 1200000,
+						"COEFFICENTI" : [
+							{
+								"CAMPO" : "ORIGINE_FONDI",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Origine dei fondi",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "Reddito da lavoro dipendente",
+										"VALORE" : "01",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reddito da lavoratore autonomo",
+										"VALORE" : "02",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Vincita",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.25										
+									},
+									{
+										"DESCRIZIONE" : "Lascito/eredità/donazione",
+										"VALORE" : "04",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2									
+									},
+									{
+										"DESCRIZIONE" : "Cliente reddituario da precedente occupazione/pensione",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Operazioni/Rendite da immobili",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Utile societario/Reddito d’impresa",
+										"VALORE" : "07",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Disinvestimento",
+										"VALORE" : "08",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reinvestimento",
+										"VALORE" : "09",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Investimento di fondi da liquidazione sinistro danni",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Scudo fiscale/voluntary disclosure",
+										"VALORE" : "11",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.2										
+									},
+									{
+										"DESCRIZIONE" : "Altro",
+										"VALORE" : "12",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									}
+								]
+							},
+							{
+								"CAMPO" : "ETA",
+								"TIPO" : "FUNC",
+								"DESCRIZIONE" : "Eta'",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "< 25",
+										"VALORE_MIN" : 0,
+										"VALORE_MAX" : 25,
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "> 55",
+										"VALORE_MIN" : 55,
+										"VALORE_MAX" : -1,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2										
+									}
+								]
+							},
+							{
+								"CAMPO" : "REDDITO_FATTURATO",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Reddito fatturato",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "da  0 a  2.500",
+										"VALORE" : "01",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.501 a 20.000 euro",
+										"VALORE" : "02",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5									
+									},
+									{
+										"DESCRIZIONE" : "da € 20.001 a € 50.000",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									},
+									{
+										"DESCRIZIONE" : "da € 50.001 a  € 100.000",
+										"VALORE" : "04",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 100.001 a €  250.000",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 250.001 a €  500.000",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1									
+									},
+									{
+										"DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+										"VALORE" : "07",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+										"VALORE" : "08",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+										"VALORE" : "09",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "oltre 50.000.000",
+										"VALORE" : "11",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									}
+								]
+							},
+							{
+								"CAMPO" : "FLAG_CLIENTE_PRIVATE",
+								"TIPO" : "BOOLEAN",
+								"DESCRIZIONE" : "Cliente Private",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "SI",
+										"VALORE" : true,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "NO",
+										"VALORE" : false,
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									}
+								]
+							}
+						]
+					},
+					{
+						"VALORE" : "04",
+						"DESCRIZIONE" : "Libero professionista",
+						"IMPORTO_BASE" : 800000,
+						"COEFFICENTI" : [
+							{
+								"CAMPO" : "ORIGINE_FONDI",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Origine dei fondi",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "Reddito da lavoro dipendente",
+										"VALORE" : "01",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reddito da lavoratore autonomo",
+										"VALORE" : "02",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Vincita",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.25										
+									},
+									{
+										"DESCRIZIONE" : "Lascito/eredità/donazione",
+										"VALORE" : "04",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2									
+									},
+									{
+										"DESCRIZIONE" : "Cliente reddituario da precedente occupazione/pensione",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Operazioni/Rendite da immobili",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Utile societario/Reddito d’impresa",
+										"VALORE" : "07",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Disinvestimento",
+										"VALORE" : "08",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reinvestimento",
+										"VALORE" : "09",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Investimento di fondi da liquidazione sinistro danni",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Scudo fiscale/voluntary disclosure",
+										"VALORE" : "11",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.2										
+									},
+									{
+										"DESCRIZIONE" : "Altro",
+										"VALORE" : "12",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									}
+								]
+							},
+							{
+								"CAMPO" : "ETA",
+								"TIPO" : "FUNC",
+								"DESCRIZIONE" : "Eta'",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "< 25",
+										"VALORE_MIN" : 0,
+										"VALORE_MAX" : 25,
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "> 55",
+										"VALORE_MIN" : 55,
+										"VALORE_MAX" : -1,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2										
+									}
+								]
+							},
+							{
+								"CAMPO" : "REDDITO_FATTURATO",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Reddito fatturato",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "da  0 a  2.500",
+										"VALORE" : "01",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.501 a 20.000 euro",
+										"VALORE" : "02",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5									
+									},
+									{
+										"DESCRIZIONE" : "da € 20.001 a € 50.000",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									},
+									{
+										"DESCRIZIONE" : "da € 50.001 a  € 100.000",
+										"VALORE" : "04",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 100.001 a €  250.000",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 250.001 a €  500.000",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.3										
+									},
+									{
+										"DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+										"VALORE" : "07",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+										"VALORE" : "08",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+										"VALORE" : "09",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "oltre 50.000.000",
+										"VALORE" : "11",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									}
+								]
+							},
+							{
+								"CAMPO" : "FLAG_CLIENTE_PRIVATE",
+								"TIPO" : "BOOLEAN",
+								"DESCRIZIONE" : "Cliente Private",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "SI",
+										"VALORE" : true,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "NO",
+										"VALORE" : false,
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									}
+								]
+							}
+						]
+					},
+					{
+						"VALORE" : "05",
+						"DESCRIZIONE" : "Lavoratore autonomo",
+						"IMPORTO_BASE" : 300000,
+						"COEFFICENTI" : [
+							{
+								"CAMPO" : "ORIGINE_FONDI",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Origine dei fondi",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "Reddito da lavoro dipendente",
+										"VALORE" : "01",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reddito da lavoratore autonomo",
+										"VALORE" : "02",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Vincita",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3										
+									},
+									{
+										"DESCRIZIONE" : "Lascito/eredità/donazione",
+										"VALORE" : "04",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.3										
+									},
+									{
+										"DESCRIZIONE" : "Cliente reddituario da precedente occupazione/pensione",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Operazioni/Rendite da immobili",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Utile societario/Reddito d’impresa",
+										"VALORE" : "07",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Disinvestimento",
+										"VALORE" : "08",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reinvestimento",
+										"VALORE" : "09",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Investimento di fondi da liquidazione sinistro danni",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Scudo fiscale/voluntary disclosure",
+										"VALORE" : "11",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.2										
+									},
+									{
+										"DESCRIZIONE" : "Altro",
+										"VALORE" : "12",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									}
+								]
+							},
+							{
+								"CAMPO" : "ETA",
+								"TIPO" : "FUNC",
+								"DESCRIZIONE" : "Eta'",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "< 25",
+										"VALORE_MIN" : 0,
+										"VALORE_MAX" : 25,
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "> 55",
+										"VALORE_MIN" : 55,
+										"VALORE_MAX" : -1,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2										
+									}
+								]
+							},
+							{
+								"CAMPO" : "REDDITO_FATTURATO",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Reddito fatturato",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "da  0 a  2.500",
+										"VALORE" : "01",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.501 a 20.000 euro",
+										"VALORE" : "02",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da € 20.001 a € 50.000",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									},
+									{
+										"DESCRIZIONE" : "da € 50.001 a  € 100.000",
+										"VALORE" : "04",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 100.001 a €  250.000",
+										"VALORE" : "05",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da € 250.001 a €  500.000",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+										"VALORE" : "07",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+										"VALORE" : "08",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+										"VALORE" : "09",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "oltre 50.000.000",
+										"VALORE" : "11",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									}
+								]
+							},
+							{
+								"CAMPO" : "FLAG_CLIENTE_PRIVATE",
+								"TIPO" : "BOOLEAN",
+								"DESCRIZIONE" : "Cliente Private",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "SI",
+										"VALORE" : true,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 1										
+									},
+									{
+										"DESCRIZIONE" : "NO",
+										"VALORE" : false,
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									}
+								]
+							}
+						]
+					},
+					{
+						"VALORE" : "06",
+						"DESCRIZIONE" : "Non occupato",
+						"IMPORTO_BASE" : 100000,
+						"COEFFICENTI" : [
+							{
+								"CAMPO" : "ORIGINE_FONDI",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Origine dei fondi",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "Reddito da lavoro dipendente",
+										"VALORE" : "01",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reddito da lavoratore autonomo",
+										"VALORE" : "02",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Vincita",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3										
+									},
+									{
+										"DESCRIZIONE" : "Lascito/eredità/donazione",
+										"VALORE" : "04",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.4										
+									},
+									{
+										"DESCRIZIONE" : "Cliente reddituario da precedente occupazione/pensione",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Operazioni/Rendite da immobili",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2										
+									},
+									{
+										"DESCRIZIONE" : "Utile societario/Reddito d’impresa",
+										"VALORE" : "07",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Disinvestimento",
+										"VALORE" : "08",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Reinvestimento",
+										"VALORE" : "09",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Investimento di fondi da liquidazione sinistro danni",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Scudo fiscale/voluntary disclosure",
+										"VALORE" : "11",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.2										
+									},
+									{
+										"DESCRIZIONE" : "Altro",
+										"VALORE" : "12",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									}
+								]
+							},
+							{
+								"CAMPO" : "ETA",
+								"TIPO" : "FUNC",
+								"DESCRIZIONE" : "Eta'",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "< 25",
+										"VALORE_MIN" : 0,
+										"VALORE_MAX" : 25,
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "> 55",
+										"VALORE_MIN" : 55,
+										"VALORE_MAX" : -1,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2										
+									}
+								]
+							},
+							{
+								"CAMPO" : "REDDITO_FATTURATO",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Reddito fatturato",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "da  0 a  2.500",
+										"VALORE" : "01",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "da 2.501 a 20.000 euro",
+										"VALORE" : "02",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "da € 20.001 a € 50.000",
+										"VALORE" : "03",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 50.001 a  € 100.000",
+										"VALORE" : "04",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 100.001 a €  250.000",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 250.001 a €  500.000",
+										"VALORE" : "06",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+										"VALORE" : "07",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+										"VALORE" : "08",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+										"VALORE" : "09",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+										"VALORE" : "10",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "oltre 50.000.000",
+										"VALORE" : "11",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									}
+								]
+							},
+							{
+								"CAMPO" : "FLAG_CLIENTE_PRIVATE",
+								"TIPO" : "BOOLEAN",
+								"DESCRIZIONE" : "Cliente Private",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "SI",
+										"VALORE" : true,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 5										
+									},
+									{
+										"DESCRIZIONE" : "NO",
+										"VALORE" : false,
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									}
+								]
+							}
+						]
+					},
+					{
+						"VALORE" : "07",
+						"DESCRIZIONE" : "Pensionato",
+						"IMPORTO_BASE" : 500000,
+						"COEFFICENTI" : [
+							{
+								"CAMPO" : "ORIGINE_FONDI",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Origine dei fondi",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "Reddito da lavoro dipendente",
+										"VALORE" : "01",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reddito da lavoratore autonomo",
+										"VALORE" : "02",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Vincita",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3										
+									},
+									{
+										"DESCRIZIONE" : "Lascito/eredità/donazione",
+										"VALORE" : "04",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Cliente reddituario da precedente occupazione/pensione",
+										"VALORE" : "05",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Operazioni/Rendite da immobili",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2										
+									},
+									{
+										"DESCRIZIONE" : "Utile societario/Reddito d’impresa",
+										"VALORE" : "07",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Disinvestimento",
+										"VALORE" : "08",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Reinvestimento",
+										"VALORE" : "09",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									},
+									{
+										"DESCRIZIONE" : "Investimento di fondi da liquidazione sinistro danni",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.1										
+									},
+									{
+										"DESCRIZIONE" : "Scudo fiscale/voluntary disclosure",
+										"VALORE" : "11",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.2										
+									},
+									{
+										"DESCRIZIONE" : "Altro",
+										"VALORE" : "12",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									}
+								]
+							},
+							{
+								"CAMPO" : "ETA",
+								"TIPO" : "FUNC",
+								"DESCRIZIONE" : "Eta'",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "< 25",
+										"VALORE_MIN" : 0,
+										"VALORE_MAX" : 25,
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "> 55",
+										"VALORE_MIN" : 55,
+										"VALORE_MAX" : -1,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2										
+									}
+								]
+							},
+							{
+								"CAMPO" : "REDDITO_FATTURATO",
+								"TIPO" : "STRING",
+								"DESCRIZIONE" : "Reddito fatturato",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "da  0 a  2.500",
+										"VALORE" : "01",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.501 a 20.000 euro",
+										"VALORE" : "02",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da € 20.001 a € 50.000",
+										"VALORE" : "03",
+										"SEGNO" : -1,
+										"COEFFICENTE" : 0.3									
+									},
+									{
+										"DESCRIZIONE" : "da € 50.001 a  € 100.000",
+										"VALORE" : "04",
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0									
+									},
+									{
+										"DESCRIZIONE" : "da € 100.001 a €  250.000",
+										"VALORE" : "05",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.2									
+									},
+									{
+										"DESCRIZIONE" : "da € 250.001 a €  500.000",
+										"VALORE" : "06",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da € 500.001 a €  1.000.000",
+										"VALORE" : "07",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 1.000.001 a 2.000.000",
+										"VALORE" : "08",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 2.000.001 a 10.000.000",
+										"VALORE" : "09",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "da 10.000.0001 a 50.000.000",
+										"VALORE" : "10",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "oltre 50.000.000",
+										"VALORE" : "11",
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									}
+								]
+							},
+							{
+								"CAMPO" : "FLAG_CLIENTE_PRIVATE",
+								"TIPO" : "BOOLEAN",
+								"DESCRIZIONE" : "Cliente Private",
+								"DOMINI_COEFFICENTE" : [
+									{
+										"DESCRIZIONE" : "SI",
+										"VALORE" : true,
+										"SEGNO" : 1,
+										"COEFFICENTE" : 0.5										
+									},
+									{
+										"DESCRIZIONE" : "NO",
+										"VALORE" : false,
+										"SEGNO" : 0,
+										"COEFFICENTE" : 0										
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+    },
+    "CATEGORIA_TDP" : "Colonnare"
+}
+
+/* 2 */
+{
+    "_id" : {
+        "GRUPPO" : "00223",
+        "ABI" : "03008",
+        "TIPO_POSIZIONE" : "CONFIGURAZIONE_REGOLA",
+        "DATA_CATALOGO" : "201702",
+        "TIPO_CONFIGURAZIONE" : "STANDARD",
+        "MODULO" : "INATTESI_ASSICURAZIONI",
+        "LIVELLO_REGOLA" : 2,
+        "ID_REGOLA" : "REGOLA_1_12_MESI_PF_NEW",
+        "ID_GRUPPO_REGOLA" : "INATTESI"
+    },
+    "INPUT" : {
+        "DESCRIZIONE_BREVE" : "versamento contante (incassi)",
+        "DESCRIZIONE_ESTESA" : "Rilevanti e frequenti versamenti di premi assicurativi per contante, privi di apparente giustificazione, soprattutto nel caso di stipulazione di più rapporti",
+        "TIPO_REGOLA" : [ 
+            "AML"
+        ],
+        "TIPO_SOGGETTO" : [ 
+            "Contraente"
+        ],
+        "DATA_ATTIVAZIONE_REGOLA" : ISODate("2000-01-01T00:00:00.000Z"),
+        "DATA_MODIFICA" : Date(253402128000000),
+        "DATA_DISATTIVAZIONE" : Date(32472144000000),
+        "TIPO_EVENTO" : [],
+        "FLAG_VISIBILITA" : true,
+        "FLAG_CONFIGURABILITA" : true,
+        "ATTRIBUTO_PRATICA" : "GIANOS",
+        "CATEGORIA_PRATICA" : "AML",
+        "PARAMETRI_REGOLA" : [ 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "dettaglio_incasso",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "INATTESI_ASSICURAZIONI",
+                    "ID_REGOLA" : "REGOLA_13_1",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "INATTESI"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "VALORE_ALFANUMERICO" : "01",
+                    "ABI" : ""
+                }
+            }
+        ]
+    },
+    "CATEGORIA_TDP" : "Colonnare"
+}

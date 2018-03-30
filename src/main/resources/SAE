@@ -1,0 +1,2954 @@
+{
+    "_id" : {
+        "GRUPPO" : "PIONR",
+        "ABI" : "03033",
+        "TIPO_POSIZIONE" : "CONFIGURAZIONE_REGOLA",
+        "DATA_CATALOGO" : "201702",
+        "TIPO_CONFIGURAZIONE" : "STANDARD",
+        "MODULO" : "GPR_ASSICURAZIONI_NEW",
+        "LIVELLO_REGOLA" : 1,
+        "ID_REGOLA" : "SAE",
+        "ID_GRUPPO_REGOLA" : "GPR"
+    },
+    "INPUT" : {
+        "DESCRIZIONE_BREVE" : "SAE",
+        "DESCRIZIONE_ESTESA" : "CODICE SAE",
+        "TIPO_REGOLA" : [ 
+            "AML"
+        ],
+        "TIPO_SOGGETTO" : [ 
+            "Titolare"
+        ],
+        "DATA_ATTIVAZIONE_REGOLA" : "2000-01-01T00:00:00.000Z",
+        "DATA_MODIFICA" : "2017-01-01T00:00:00.000Z",
+
+        "TIPO_EVENTO" : [],
+        "FLAG_VISIBILITA" : true,
+        "FLAG_CONFIGURABILITA" : true,
+        "ATTRIBUTO_PRATICA" : "GIANOS",
+        "CATEGORIA_PRATICA" : "GPR",
+        "PARAMETRI_REGOLA" : [ 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_1",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "100",
+                    "DESC_PARAMETRO" : "TESORO DELLO STATO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_2",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "101",
+                    "DESC_PARAMETRO" : "CASSA DEPOSITI E PRESTITI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_3",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "102",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONE DELLO STATO ED ORGANI COSTITUZIONALI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_4",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "165",
+                    "DESC_PARAMETRO" : "ENTI PRODUTTORI DI SERVIZI ECONOMICI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_5",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "166",
+                    "DESC_PARAMETRO" : "ENTI PRODUTTORI DI SERVIZI ASSISTENZIALI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_6",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "167",
+                    "DESC_PARAMETRO" : "ENTI DI RICERCA"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_7",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "120",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI REGIONALI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_8",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "121",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI PROVINCIALI E CITTA METROPOLITANE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_9",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "173",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI COMUNALI E UNIONI DI COMUNI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_10",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "174",
+                    "DESC_PARAMETRO" : "ENTI PRODUTTORI DI SERVIZI SANITARI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_11",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "175",
+                    "DESC_PARAMETRO" : "ALTRI ENTI PRODUTTORI DI SERVIZI SANITARI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_12",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "176",
+                    "DESC_PARAMETRO" : "ENTI PRODUTTORI DI SERVIZI ECONOMICI (LOCALI)"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_13",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "177",
+                    "DESC_PARAMETRO" : "ENTI PRODUTTORI DI SERVIZI ASSISTENZIALI (LOCALI)"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_14",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "191",
+                    "DESC_PARAMETRO" : "ENTI DI PREVIDENZA ED ASSISTENZA SOCIALE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_15",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "300",
+                    "DESC_PARAMETRO" : "BANCA D ITALIA"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_16",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "301",
+                    "DESC_PARAMETRO" : "UFFICIO ITALIANO CAMBI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_17",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "245",
+                    "DESC_PARAMETRO" : "SISTEMA BANCARIO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_18",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "247",
+                    "DESC_PARAMETRO" : "FONDI COMUNI DI INVESTIMENTO MONETARIO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_19",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "250",
+                    "DESC_PARAMETRO" : "FONDAZIONI BANCARIE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_20",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "255",
+                    "DESC_PARAMETRO" : "HOLDING FINANZIARIE PUBBLICHE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_21",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "256",
+                    "DESC_PARAMETRO" : "HOLDING FINANZIARIE PRIVATE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_22",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "257",
+                    "DESC_PARAMETRO" : "MERCHANT BANKS"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_23",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "258",
+                    "DESC_PARAMETRO" : "SOCIETA DI LEASING"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_24",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "259",
+                    "DESC_PARAMETRO" : "SOCIETA DI FACTORING"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_25",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "263",
+                    "DESC_PARAMETRO" : "SOCIETA DI CREDITO AL CONSUMO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_26",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "264",
+                    "DESC_PARAMETRO" : "SOCIETA DI INTERMEDIAZIONE MOBILIARE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_27",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "265",
+                    "DESC_PARAMETRO" : "SOCIETA FIDUCIARIE DI GESTIONE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_28",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "266",
+                    "DESC_PARAMETRO" : "FONDI COMUNI DI INVESTIMENTO MOBILIARE E SICAV"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_29",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "267",
+                    "DESC_PARAMETRO" : "ALTRI ORGANISMI DI INVESTIMENTO COLLETTIVO DEL RISPARMIO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_30",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "249",
+                    "DESC_PARAMETRO" : "SOCIETA' VEICOLO FINANZIARIE PREPOSTE A OPERAZIONI DI CARTOLARIZZAZIONE (SV)"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_31",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "584",
+                    "DESC_PARAMETRO" : "CTBTO - COMPREHENSIVE NUCLEAR - TEST - BAN ORG."
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_32",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "548",
+                    "DESC_PARAMETRO" : "FINANZIARIE RSM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_33",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "575",
+                    "DESC_PARAMETRO" : "FAMIGLIE CONSUMATRICI RSM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_34",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "268",
+                    "DESC_PARAMETRO" : "ALTRE FINANZIARIE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_35",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "270",
+                    "DESC_PARAMETRO" : "SOCIETA DI GESTIONE DEI FONDI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_36",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "273",
+                    "DESC_PARAMETRO" : "SOCIETA FIDUCIARIE DI AMMINISTRAZIONE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_37",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "275",
+                    "DESC_PARAMETRO" : "ENTI PREPOSTI AL FUNZIONAMENTO DEL MERCATO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_38",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "276",
+                    "DESC_PARAMETRO" : "AGENTI DI CAMBIO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_39",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "329",
+                    "DESC_PARAMETRO" : "ASSOCIAZIONI BANCARIE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_40",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "278",
+                    "DESC_PARAMETRO" : "ASSOCIAZIONI TRA IMPRESE FINANZIARIE ED ASSICURATIVE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_41",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "279",
+                    "DESC_PARAMETRO" : "AUTORITA CENTRALI DI CONTROLLO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_42",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "280",
+                    "DESC_PARAMETRO" : "MEDIATORI AGENTI E CONSULENTI DI ASSICURAZIONE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_43",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "283",
+                    "DESC_PARAMETRO" : "PROMOTORI FINANZIARI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_44",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "284",
+                    "DESC_PARAMETRO" : "ALTRI AUSIALI FINANZIARI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_45",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "294",
+                    "DESC_PARAMETRO" : "IMPRESE DI ASSICURAZIONE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_46",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "295",
+                    "DESC_PARAMETRO" : "FONDI PENSIONE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_47",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "296",
+                    "DESC_PARAMETRO" : "ALTRI FONDI PREVIDENZIALI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_48",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "470",
+                    "DESC_PARAMETRO" : "AZIENDE MUNICIPALIZZATE PROVINCIALIZZATE E REGIONALIZZATE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_49",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "471",
+                    "DESC_PARAMETRO" : "IMPRESE PARTECIPATE DALLO STATO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_50",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "472",
+                    "DESC_PARAMETRO" : "IMPRESE A PARTECIPAZIONE REGIONALE O LOCALE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_51",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "473",
+                    "DESC_PARAMETRO" : "ALTRE UNITA PUBBLICHE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_52",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "474",
+                    "DESC_PARAMETRO" : "HOLDING PUBBLICHE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_53",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "430",
+                    "DESC_PARAMETRO" : "IMPRESE PRODUTTIVE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_54",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "431",
+                    "DESC_PARAMETRO" : "HOLDING PRIVATE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_55",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "450",
+                    "DESC_PARAMETRO" : "ASSOCIAZIONI TRA IMPRESE NON FINANZIARIE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_56",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "480",
+                    "DESC_PARAMETRO" : "UNITA O SOCIETA CON 20 O PIU ADDETTI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_57",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "481",
+                    "DESC_PARAMETRO" : "UNITA O SOCIETA CON PIU DI 5 E MENO DI 20 ADDETTI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_58",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "482",
+                    "DESC_PARAMETRO" : "SOCIETA CON MENO DI 20 ADDETTI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_59",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "490",
+                    "DESC_PARAMETRO" : "UNITA O SOCIETA CON 20 O PIU ADDETTI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_60",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "491",
+                    "DESC_PARAMETRO" : "UNITA O SOCIETA CON PIU DI 5 E MENO DI 20 ADDETTI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_61",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "285",
+                    "DESC_PARAMETRO" : "HOLDING OPERATIVE FINANZIARIE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_62",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "287",
+                    "DESC_PARAMETRO" : "SOCIETA' DI PARTECIPAZIONE (HOLDING)DI GRUPPI FINANZIARI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_63",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "492",
+                    "DESC_PARAMETRO" : "SOCIETA CON MENO DI 20 ADDETTI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_64",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "614",
+                    "DESC_PARAMETRO" : "ARTIGIANI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_65",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "572",
+                    "DESC_PARAMETRO" : "FAMIGLIE PRODUTTRICI RSM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_66",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "559",
+                    "DESC_PARAMETRO" : "IMPRESE PRODUTTRICI RSM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_67",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "615",
+                    "DESC_PARAMETRO" : "ALTRE FAMIGLIE PRODUTTRICI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_68",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "600",
+                    "DESC_PARAMETRO" : "FAMIGLIE CONSUMATRICI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_69",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "500",
+                    "DESC_PARAMETRO" : "ENTI ECCLESIASTICI E RELIGIOSI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_70",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "501",
+                    "DESC_PARAMETRO" : "ISTITUZIONI VARIE SENZA SCOPO DI LUCRO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_71",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "551",
+                    "DESC_PARAMETRO" : "UNITA NON CLASSIFICABILI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_72",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "552",
+                    "DESC_PARAMETRO" : "UNITA NON CLASSIFICATE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_73",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "704",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI CENTRALI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_74",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "705",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI CENTRALI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_75",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "706",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI DI STATI FEDERATI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_76",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "707",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI DI STATI FEDERATI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_77",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "708",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI LOCALI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_78",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "709",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI LOCALI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_79",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "713",
+                    "DESC_PARAMETRO" : "ENTI DI ASSISTENZA E PREVIDENZA SOCIALE DEI PAESI UE MEMBRI UM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_80",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "714",
+                    "DESC_PARAMETRO" : "ENTI DI ASSISTENZA E PREVIDENZA SOCIALE DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_81",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "715",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI PUBBLICHE E ENTI DI ASSISTENZA E PREVIDENZA DI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_82",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "724",
+                    "DESC_PARAMETRO" : "AUTORITA' BANCARIE CENTRALI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_83",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "725",
+                    "DESC_PARAMETRO" : "AUTORITA' BANCARIE CENTRALI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_84",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "726",
+                    "DESC_PARAMETRO" : "AUTORITA BANCARIE CENTRALI DEI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_85",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "727",
+                    "DESC_PARAMETRO" : "SISTEMA BANCARIO DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_86",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "728",
+                    "DESC_PARAMETRO" : "SISTEMA BANCARIO DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_87",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "729",
+                    "DESC_PARAMETRO" : "SISTEMA BANCARIO DEI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_88",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "733",
+                    "DESC_PARAMETRO" : "ALTRE ISTITUZIONI FINANZIARIE MONETARIE DEI PAESI UE MEMBRI UM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_89",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "734",
+                    "DESC_PARAMETRO" : "ALTRE ISTITUZIONI FINANZIARIE MONETARIE DEI PAESI UE MEMBRI UM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_90",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "735",
+                    "DESC_PARAMETRO" : "ALTRE ISTITUZIONI MONETARIE DEI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_91",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "739",
+                    "DESC_PARAMETRO" : "ALTRI INTERMEDIARI FINANZIARI DEI PAESI UE MEMBRI UM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_92",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "717",
+                    "DESC_PARAMETRO" : "SOCIETA' VEICOLO DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_93",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "718",
+                    "DESC_PARAMETRO" : "SOCIETA' VEICOLO DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_94",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "743",
+                    "DESC_PARAMETRO" : "ALTRI INTERMEDIARI FINANZIARI DEI PAESI UE NON MEMBRI UM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_95",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "744",
+                    "DESC_PARAMETRO" : "IMPRESE DI ASSICURAZIONE E FONDI PENSIONE DEI PAESI UE MEMBRI UM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_96",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "745",
+                    "DESC_PARAMETRO" : "IMPRESE DI ASSICURAZIONE E FONDI PENSIONE DEI PAESI UE NON MEMBRI UM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_97",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "746",
+                    "DESC_PARAMETRO" : "AUSILIARI FINANZIARI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_98",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "526",
+                    "DESC_PARAMETRO" : "BANCA CENTRALE RSM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_99",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "529",
+                    "DESC_PARAMETRO" : "BANCHE RSM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_100",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "747",
+                    "DESC_PARAMETRO" : "AUSILIARI FINANZIARI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_101",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 1,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "748",
+                    "DESC_PARAMETRO" : "ALTRE SOCIETA FINANZIARIE DI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_102",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "757",
+                    "DESC_PARAMETRO" : "SOCIETA' NON FINANZIARIE DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_103",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "758",
+                    "DESC_PARAMETRO" : "SOCIETA' NON FINANZIARIE DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_104",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "759",
+                    "DESC_PARAMETRO" : "SOCIETA NON FINANZIARIE DI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_105",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "768",
+                    "DESC_PARAMETRO" : "FAMIGLIE PRODUTTRICI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_106",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "769",
+                    "DESC_PARAMETRO" : "FAMIGLIE PRODUTTRICI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_107",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "772",
+                    "DESC_PARAMETRO" : "FAMIGLIE PRODUTTRICI DI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_108",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "773",
+                    "DESC_PARAMETRO" : "FAMIGLIE CONSUMATRICI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_109",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "774",
+                    "DESC_PARAMETRO" : "FAMIGLIE CONSUMATRICI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_110",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "775",
+                    "DESC_PARAMETRO" : "FAMIGLIE CONSUMATRICI DI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_111",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 3,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "783",
+                    "DESC_PARAMETRO" : "FAMIGLIE CONSUMATRICI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_112",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 3,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "784",
+                    "DESC_PARAMETRO" : "ISTITUZIONI SENZA SCOPO DI LUCRO AL SERVIZIO DELLE FAMIGLIE DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_113",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 3,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "785",
+                    "DESC_PARAMETRO" : "ISTITUZIONI SENZA SCOPO DI LUCRO AL SERIZIO DI FAMIGLIE DI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_114",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "791",
+                    "DESC_PARAMETRO" : "BANCA CENTRALE EUROPEA"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_115",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "770",
+                    "DESC_PARAMETRO" : "ISTITUZIONI DELL UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_116",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "771",
+                    "DESC_PARAMETRO" : "ALTRI ORGANISMI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_117",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "794",
+                    "DESC_PARAMETRO" : "RAPPRESENTANZE ESTERE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_118",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "515",
+                    "DESC_PARAMETRO" : "AMMINISTRAZIONI PUBBLICHE RSM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_119",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "585",
+                    "DESC_PARAMETRO" : "ISTITUZIONI SENZA SCOPO DI LUCRO RSM"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_120",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "178",
+                    "DESC_PARAMETRO" : "ALTRE AMMINISTRAZIONI LOCALI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_121",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "248",
+                    "DESC_PARAMETRO" : "ISTITUTI DI MONETA ELETTRONICA"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_122",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "581",
+                    "DESC_PARAMETRO" : "UNIDROIT - INTL. INSTITUTE FOR THE UNIFICATION OF PRIVATE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_123",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "582",
+                    "DESC_PARAMETRO" : "WTO - WORLD TRADE ORGANIZATION"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_124",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "583",
+                    "DESC_PARAMETRO" : "EBA - EURO BANKING ASSOCIATION"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_125",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "288",
+                    "DESC_PARAMETRO" : "SOCIETA' DI PARTECIPAZIONE (HOLDING) DI GRUPPI NON FINANZIARI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_126",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "289",
+                    "DESC_PARAMETRO" : "ISTITUZIONI CAPTIVE DIVERSE DALLE HOLDING DI PARTECIPAZIONE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_127",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "432",
+                    "DESC_PARAMETRO" : "HOLDING OPERATIVE PRIVATE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_128",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "475",
+                    "DESC_PARAMETRO" : "IMPRESE CONTROLLATE DALLE AMMINISTRAZIONI CENTRALI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_129",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "476",
+                    "DESC_PARAMETRO" : "IMPRESE CONTROLLATE DALLE AMMINISTRAZIONI LOCALI"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_130",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "477",
+                    "DESC_PARAMETRO" : "IMPRESE CONTROLLATE DA ALTRE AMMINISTRAZIONI PUBBLICHE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_131",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "753",
+                    "DESC_PARAMETRO" : "FONDI COMUNI MONETARI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_132",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "754",
+                    "DESC_PARAMETRO" : "FONDI COMUNI MONETARI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_133",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "755",
+                    "DESC_PARAMETRO" : "FONDI COMUNI MONETARI DEI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_134",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "756",
+                    "DESC_PARAMETRO" : "ALTRE ISTITUZIONI FINANZIARIE MONETARIE DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_135",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "763",
+                    "DESC_PARAMETRO" : "ALTRE ISTITUZIONI FINANZIARIE MONETARIE DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_136",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "764",
+                    "DESC_PARAMETRO" : "ALTRE ISTITUZIONI FINANZIARIE MONETARIE DEI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_137",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "765",
+                    "DESC_PARAMETRO" : "FONDI COMUNI NON MONETARI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_138",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "766",
+                    "DESC_PARAMETRO" : "FONDI COMUNI NON MONETARI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_139",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "767",
+                    "DESC_PARAMETRO" : "FONDI COMUNI NON MONETARI DEI PAESI NON UE"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_140",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "776",
+                    "DESC_PARAMETRO" : "ALTRI INTERMEDIARI FINANZIARI DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_141",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "778",
+                    "DESC_PARAMETRO" : "ALTRI INTERMEDIARI FINANZIARI DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_142",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "779",
+                    "DESC_PARAMETRO" : "IMPRESE DI ASSICURAZIONE DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_143",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "782",
+                    "DESC_PARAMETRO" : "FONDI PENSIONE DEI PAESI UE MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_144",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "790",
+                    "DESC_PARAMETRO" : "IMPRESE DI ASSICURAZIONE DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_145",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "800",
+                    "DESC_PARAMETRO" : "FONDI PENSIONE DEI PAESI UE NON MEMBRI DELL'AREA DELL'EURO"
+                }
+            }, 
+            {
+                "_id" : {
+                    "DATA_CATALOGO" : "201702",
+                    "TIPO_POSIZIONE" : "PARAMETRO_REGOLA",
+                    "ID_PARAMETRO" : "SAE_146",
+                    "TIPO_CONFIGURAZIONE" : "STANDARD",
+                    "MODULO" : "GPR_ASSICURAZIONI_NEW",
+                    "ID_REGOLA" : "SAE",
+                    "LIVELLO_REGOLA" : 1,
+                    "ID_GRUPPO_REGOLA" : "GPR"
+                },
+                "INPUT" : {
+                    "TIPO_PARAMETRO" : "Alfanumerico",
+                    "PUNTEGGIO" : 0,
+                    "ABI" : "",
+                    "TIPO_SOGGETTO" : "",
+                    "VALORE_ALFANUMERICO" : "801",
+                    "DESC_PARAMETRO" : "ALTRE SOCIETA' FINANZIARIE DI PAESI NON UE"
+                }
+            }
+        ]
+    },
+    "CATEGORIA_TDP" : "Colonnare"
+}
